@@ -1,0 +1,19 @@
+[package]
+name = "test_rust"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bevy = { git = "https://github.com/bevyengine/bevy", branch = "main", default-features = false, features = [
+    "bevy_gilrs",
+    "bevy_gltf",
+    "bevy_wgpu",
+    "bevy_winit",
+    "render",
+    "png",
+    "hdr",
+    "mp3",
+    "x11",
+] }
